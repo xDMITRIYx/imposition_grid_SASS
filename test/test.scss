@@ -1,0 +1,20 @@
+@import "grid";
+div{
+	@include fcol(lg, 4);
+}
+p{
+	@include offset-padding(left, md, 3);
+}
+div{
+	@include media(lg){
+		margin:10px;
+		float:left;
+	};
+}
+div{
+	@include col-flex;
+}
+/*# test */
+div{
+	@include prop(lg, justify-content, center);
+}
